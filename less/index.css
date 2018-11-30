@@ -1,0 +1,233 @@
+@font-face {
+  font-family: 'icomoon';
+  src: url('fonts/icomoon.eot?xgkav');
+  src: url('fonts/icomoon.eot?xgkav#iefix') format('embedded-opentype'), url('fonts/icomoon.ttf?xgkav') format('truetype'), url('fonts/icomoon.woff?xgkav') format('woff'), url('fonts/icomoon.svg?xgkav#icomoon') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+[class^="icon-"],
+[class*=" icon-"] {
+  /* use !important to prevent issues with browser extensions that change fonts */
+  font-family: 'icomoon' !important;
+  speak: none;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  /* Better Font Rendering =========== */
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.icon-add:before {
+  content: "\e900";
+}
+.icon-cancle:before {
+  content: "\e901";
+}
+.icon-delete:before {
+  content: "\e902";
+}
+.icon-edit:before {
+  content: "\e903";
+}
+.icon-preview:before {
+  content: "\e904";
+}
+.icon-share:before {
+  content: "\e905";
+}
+.icon-time:before {
+  content: "\e906";
+}
+@media (width: 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+@media (width: 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+@media (width: 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+@media (width: 411px) {
+  html {
+    font-size: 20.55px;
+  }
+}
+@media (width: 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+.container {
+  width: 100%;
+}
+body,
+h4,
+p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f7f4f1;
+}
+img {
+  width: 100%;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.items {
+  width: 100%;
+  padding: 0 0.75rem;
+  box-sizing: border-box;
+}
+.items .title {
+  margin: 0.75rem 0 1.0625rem 0;
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #888888;
+}
+.items .title h4 {
+  font-weight: 500;
+  color: #000;
+}
+.item {
+  width: 100%;
+  box-sizing: border-box;
+  height: 7rem;
+  background-color: #fff;
+  margin-bottom: 0.9375rem;
+}
+.item:not(.add) {
+  border-radius: 0.4375rem;
+  overflow: hidden;
+}
+.all {
+  height: 9.8125rem;
+}
+.all .body {
+  height: 7.28125rem;
+  background-color: #55bc75;
+  background-image: url('../images/salebgc.png'), url('../images/波浪图.png');
+  background-position: right -0.6875rem, 0rem bottom;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 4.65625rem, 100%;
+}
+.extra {
+  display: flex;
+  padding: 0.5rem 0;
+}
+.extra a {
+  display: block;
+  box-sizing: border-box;
+  flex: 1;
+  text-align: center;
+  line-height: 1.5rem;
+  border-right: 1px solid #e8e2d9;
+  font-size: 0.8125rem;
+  color: #888;
+}
+.extra a span[class^='icon'] {
+  color: #55bc75;
+}
+.extra a:last-child {
+  border: none;
+}
+.add {
+  border: 0.09375rem dashed #dedede;
+}
+.add a {
+  margin: 1.125rem 0 0 0;
+  text-align: center;
+  color: #aeaeae;
+  display: block;
+  font-size: 3.25rem;
+}
+.add a span {
+  display: block;
+  margin-top: 0.4375rem;
+  font-size: 0.8125rem;
+}
+.tips {
+  line-height: 2;
+  padding: 0 0.75rem;
+  margin-top: 3.6875rem;
+  font-size: 0.6875rem;
+  color: #999;
+}
+.coupon {
+  height: 9.8125rem;
+}
+.coupon .body {
+  height: 7.28125rem;
+  padding: 0.5625rem 0 0 0.6875rem;
+  background-color: #a974bc;
+  background-image: url('../images/salebgc.png'), url('../images/波浪图.png');
+  background-position: right -0.6875rem, 0rem bottom;
+  background-repeat: no-repeat, repeat-x;
+  background-size: 4.65625rem, 100%;
+}
+.coupon .body h4 {
+  font-size: 2.1875rem;
+  font-weight: lighter;
+}
+.coupon .body h4:before {
+  content: "¥";
+  font-size: 0.96875rem;
+}
+.coupon .body p {
+  display: inline-block;
+}
+.coupon .body .time {
+  margin-top: 0.625rem;
+}
+.coupon .body .quantity {
+  display: block;
+  line-height: 1.5625rem;
+}
+.coupon .extra span[class^='icon'] {
+  color: #a974bc;
+}
+.coupon .extra:last-child {
+  border: none;
+}
+.body {
+  position: relative;
+  box-sizing: border-box;
+  padding: 1.0625rem 0 0 0.875rem;
+  font-size: 1.25rem;
+  color: #fff;
+}
+.body h4 {
+  font-weight: 400;
+}
+.body p {
+  margin-top: 0.375rem;
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+.body .time {
+  margin-top: 1.5625rem;
+  font-size: 0.6875rem;
+  word-spacing: -3px;
+}
+.body .flag {
+  position: absolute;
+  padding: 0 0.15625rem;
+  line-height: 1rem;
+  display: block;
+  font-size: 0.6875rem;
+  bottom: 0.625rem;
+  right: 0.8125rem;
+  background-color: rgba(0, 0, 0, 0.4);
+  border-radius: 3px;
+}

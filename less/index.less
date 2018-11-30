@@ -1,0 +1,216 @@
+@import './style.less';
+
+@media (width : 320px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+@media (width : 360px) {
+  html {
+    font-size: 18px;
+  }
+}
+
+@media (width : 375px) {
+  html {
+    font-size: 18.75px;
+  }
+}
+
+@media (width : 411px) {
+  html {
+    font-size: 20.55px;
+  }
+}
+
+@media (width : 414px) {
+  html {
+    font-size: 20.7px;
+  }
+}
+
+.container {
+  width: 100%;
+}
+body , h4 , p {
+  padding: 0;
+  margin: 0;
+}
+body {
+  background-color: #f7f4f1;
+}
+img {
+  width: 100%;
+  display: block;
+  
+}
+a {
+  text-decoration: none;
+}
+
+.items {
+  width: 100%;
+  padding: 0 24 / 32rem;
+  box-sizing: border-box;
+  .title {
+    margin: 24/32rem 0 34/32rem 0;
+    display: flex;
+    justify-content: space-between;
+    font-size: 28 / 32rem;
+    color: #888888;
+    h4 {
+      font-weight: 500;
+      color: #000;
+    }
+  }
+  
+}
+.item {
+  width: 100%;
+  box-sizing: border-box;
+  height: 224 / 32rem;
+  background-color: #fff;
+  margin-bottom: 30 /32rem;
+  &:not(.add) {
+    border-radius: 14 /32rem;
+    overflow: hidden;
+  }
+  
+}
+
+.all {
+  height: 314 / 32rem;
+  .body {
+    height: 233 / 32rem;
+    background-color: #55bc75;
+    background-image: url('../images/salebgc.png') , url('../images/波浪图.png');
+    background-position: right -22/32rem , 0 /32rem bottom ;
+    background-repeat: no-repeat ,repeat-x;
+    background-size: 149 / 32rem , 100%;
+  }
+  
+}
+.extra {
+  display: flex;
+  padding: 16 / 32rem 0;
+  a {
+    display: block;
+    box-sizing: border-box;
+    flex: 1;
+    text-align: center;
+    line-height: 48 / 32rem;
+    border-right: 1px solid #e8e2d9;
+    font-size: 26 / 32rem;
+    color: #888;
+    span[class^='icon'] {
+      color: #55bc75;
+    }
+    &:last-child{
+      border: none;
+    }
+  }
+
+}
+  
+
+.add{ 
+  border: 3/32rem dashed #dedede;
+  a {
+    margin: 36 / 32rem 0 0 0;
+    text-align: center;
+    color: #aeaeae;
+    display: block;
+    font-size: 104 /32rem;
+    span{
+      display: block;
+      margin-top: 14/32rem;
+      font-size: 26 / 32rem;
+    }
+  }
+}
+
+.tips {
+  line-height: 2;
+  padding: 0 24 / 32rem;
+  margin-top: 118 / 32rem;
+  font-size: 22 / 32rem;
+  color: #999;
+}
+.coupon {
+  height: 314 / 32rem;
+  .body {
+    height: 233 / 32rem;
+    padding: 18/32rem 0 0 22/32rem;
+    background-color: #a974bc;
+    background-image: url('../images/salebgc.png') , url('../images/波浪图.png');
+    background-position: right -22/32rem , 0 /32rem bottom ;
+    background-repeat: no-repeat ,repeat-x;
+    background-size: 149 / 32rem , 100%;
+    
+    
+    h4 {
+      font-size: 70 /32rem;
+      font-weight: lighter;
+    }
+    h4:before{
+      content: "¥";
+      font-size: 31/32rem;
+    }
+    p {
+      display: inline-block;
+    }
+    .time {
+      margin-top: 20 /32rem;
+    }
+    .quantity{
+
+      display: block;
+      line-height: 50 / 32rem;
+    }
+  }
+  .extra {
+    span[class^='icon'] {
+      color: #a974bc;
+    }
+    &:last-child{
+      border: none;
+    }
+
+  }
+  
+}
+.body {
+  position: relative;
+  box-sizing: border-box;
+  padding: 34/32rem 0 0 28/32rem;
+  font-size: 40 /32rem;
+  color: #fff;
+  h4 {
+    font-weight: 400;
+  }
+  p {
+    margin-top: 12/32rem;
+    font-size: 24 /32rem;
+    color: rgba(255, 255, 255, 0.6);
+  }
+
+  .time {
+    margin-top: 50 /32rem;
+    font-size: 22 /32rem;
+    word-spacing: -3px; 
+  }
+  .flag {
+    position: absolute;
+    padding: 0 5/32rem;
+    line-height: 1rem;
+    display: block;
+    font-size: 22 /32rem;
+    bottom: 20 /32rem;
+    right: 26 /32rem;
+    background-color: rgba(0, 0, 0, 0.4);
+    border-radius: 3px;
+  }
+  
+  
+}
